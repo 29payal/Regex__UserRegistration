@@ -49,15 +49,27 @@ namespace RegexPatterns
         }
         public static void UserMobileNumber()
         {
-                Console.WriteLine("||  Enter Mobile Number  ||");
-                string mobileNumber = Console.ReadLine();
+            Console.WriteLine("||  Enter Mobile Number  ||");
+            string mobileNumber = Console.ReadLine();
             string pattern = "^[1-9]{2}[ ]{1}[1-9]{1}[0-9]{9}$";
             if (Regex.IsMatch(mobileNumber, pattern))
-                    Console.WriteLine("________Mobile Number is Valid_______");
-                else
-                {
-                    Console.WriteLine("_________User Mobile number is invalid_________");
-                }
+                Console.WriteLine("________Mobile Number is Valid_______");
+            else
+            {
+                Console.WriteLine("_________User Mobile number is invalid_________");
             }
+        }
+        public static void PaswordRule1()
+        {
+            Console.WriteLine("|| Enter the password for rule first ||");
+            string rule1 = Console.ReadLine();
+            string pattern = "^[A-Za-z0-9]{8,}$";
+            if (Regex.IsMatch(rule1, pattern))
+                Console.WriteLine("_________Password is valid_______");
+            else
+            {
+                Console.WriteLine("________Password is invalid");
+            }
+        }
     }
 }
