@@ -17,6 +17,7 @@ namespace RegexPatterns
             Patterns.PaswordRule1();
             Patterns.PaswordRule2();
             Patterns.PaswordRule3();
+            Patterns.PaswordRule4();
             Console.ReadLine();
         }
     }

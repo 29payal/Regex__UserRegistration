@@ -98,5 +98,18 @@ namespace RegexPatterns
                 Console.WriteLine("________Password is invalid_______");
             }
         }
+       public static void PaswordRule4()
+        {
+            //rule4= One speical character in the password
+            Console.WriteLine("|| Enter the password for rule fourth  ||");
+            string rule4 = Console.ReadLine();
+            string pattern = "^[A-Za-z0-9!@#$%^&*]{1,}[A-Za-z0-9!@#$%^&*]{6,}$";
+            if (Regex.IsMatch(rule4, pattern))
+                Console.WriteLine("_________Password is valid_______");
+            else
+            {
+                Console.WriteLine("________Password is invalid_______");
+            }
+        }
     }
 }
