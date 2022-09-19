@@ -35,5 +35,17 @@ namespace RegexPatterns
                 Console.WriteLine("LastName is invalid");
             }
         }
+        public static void UserEmail()
+        {
+            Console.WriteLine("Enter email");
+            string mail = Console.ReadLine();
+            string pattern = "^([A - Za - z0 - 9] +[.#+_])*[A-Za-z0-9]+[@][A-Za-z]+[.][A-Za-z]{2,3}([.][A-Za-z]{2})?$";
+            if (Regex.IsMatch(mail, pattern))
+                Console.WriteLine("Entered user email is valid");
+            else
+            {
+                Console.WriteLine("Entered user email invalid");
+            }
+        }
     }
 }
