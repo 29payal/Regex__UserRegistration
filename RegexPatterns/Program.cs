@@ -13,6 +13,7 @@ namespace RegexPatterns
             Patterns.UserFirstName();
             Patterns.UserLastName(); 
             Patterns.UserEmail();
+            Patterns.UserMobileNumber();
             Console.ReadLine();
         }
     }
