@@ -76,9 +76,22 @@ namespace RegexPatterns
         {
             //rule2= One upper case in the password
             Console.WriteLine("|| Enter the password for rule second ||");
-            string rule1 = Console.ReadLine();
+            string rule2 = Console.ReadLine();
             string pattern = "^[A-Z]{1,}[A-Za-z0-9]{7,}$";
-            if (Regex.IsMatch(rule1, pattern))
+            if (Regex.IsMatch(rule2, pattern))
+                Console.WriteLine("_________Password is valid_______");
+            else
+            {
+                Console.WriteLine("________Password is invalid_______");
+            }
+        }
+       public static void PaswordRule3()
+        {
+            //rule3= One numberic number in the password
+            Console.WriteLine("|| Enter the password for rule third ||");
+            string rule3 = Console.ReadLine();
+            string pattern = "^[A-Za-z0-9]{1,}[A-Za-z0-9]{6,}$";
+            if (Regex.IsMatch(rule3, pattern))
                 Console.WriteLine("_________Password is valid_______");
             else
             {
