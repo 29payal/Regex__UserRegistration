@@ -61,6 +61,7 @@ namespace RegexPatterns
         }
         public static void PaswordRule1()
         {
+            //rule1= minimum 8 characters in the password
             Console.WriteLine("|| Enter the password for rule first ||");
             string rule1 = Console.ReadLine();
             string pattern = "^[A-Za-z0-9]{8,}$";
@@ -68,7 +69,20 @@ namespace RegexPatterns
                 Console.WriteLine("_________Password is valid_______");
             else
             {
-                Console.WriteLine("________Password is invalid");
+                Console.WriteLine("________Password is invalid___________");
+            }
+        }
+        public static void PaswordRule2()
+        {
+            //rule2= One upper case in the password
+            Console.WriteLine("|| Enter the password for rule second ||");
+            string rule1 = Console.ReadLine();
+            string pattern = "^[A-Z]{1,}[A-Za-z0-9]{7,}$";
+            if (Regex.IsMatch(rule1, pattern))
+                Console.WriteLine("_________Password is valid_______");
+            else
+            {
+                Console.WriteLine("________Password is invalid_______");
             }
         }
     }

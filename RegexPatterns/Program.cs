@@ -15,6 +15,7 @@ namespace RegexPatterns
             Patterns.UserEmail();
             Patterns.UserMobileNumber();
             Patterns.PaswordRule1();
+            Patterns.PaswordRule2();
             Console.ReadLine();
         }
     }
