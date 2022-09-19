@@ -11,6 +11,7 @@ namespace RegexPatterns
         static void Main(string[] args)
         {
             Patterns.UserFirstName();
+            Patterns.UserLastName();    
             Console.ReadLine();
         }
     }

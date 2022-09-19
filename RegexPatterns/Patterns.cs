@@ -15,11 +15,24 @@ namespace RegexPatterns
             string FirstName = Console.ReadLine();
             string pattern = "^[A-Z]{1}[A-Z a-z]{2,}$";
 
-            if (Regex.IsMatch(FirstName,pattern))
-                Console.WriteLine("User Name is Valid");
+            if (Regex.IsMatch(FirstName, pattern))
+                Console.WriteLine("User FirstName is Valid");
             else
             {
-                Console.WriteLine("Name is invalid");
+                Console.WriteLine("FirstName is invalid");
+            }
+        }
+        public static void UserLastName()
+        {
+            Console.WriteLine("Enter the last Name : ");
+            string FirstName = Console.ReadLine();
+            string pattern = "^[A-Z]{1}[A-Z a-z]{2,}$";
+
+            if (Regex.IsMatch(FirstName, pattern))
+                Console.WriteLine("User LastName is Valid");
+            else
+            {
+                Console.WriteLine("LastName is invalid");
             }
         }
     }
