@@ -10,7 +10,15 @@ namespace RegexPatterns
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to User Registration Problem");
+            Patterns.UserFirstName();
+            Patterns.UserLastName(); 
+            Patterns.UserEmail();
+            Patterns.UserMobileNumber();
+            Patterns.PaswordRule1();
+            Patterns.PaswordRule2();
+            Patterns.PaswordRule3();
+            Patterns.PaswordRule4();
+           
             Console.ReadLine();
         }
     }
